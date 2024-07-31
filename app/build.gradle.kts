@@ -127,6 +127,7 @@ dependencies {
     //DI - Hilt
     ksp(libs.hilt.android.compiler)
     implementation(libs.hilt.android)
+    implementation(libs.hilt.navigation)
 
     //Room
     implementation("androidx.room:room-ktx:$room_version")
