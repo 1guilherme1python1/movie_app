@@ -12,7 +12,7 @@ data class MovieResult(
     @SerializedName("genre_ids")
     val genreIds: List<Int>,
 
-    @SerializedName("adult")
+    @SerializedName("id")
     val id: Int,
 
     @SerializedName("media_type")

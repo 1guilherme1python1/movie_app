@@ -16,11 +16,11 @@ fun NavigationGraph(navController: NavHostController) {
     ){
         composable(BottomNavItem.MoviePopular.route){
 
-//            val viewModel: MoviePopularViewModel = hiltViewModel()
-//            val uiState = viewModel.uiState
-//
-//
-//            MoviePopularScreen(uiState, navigateToDetailMovie = {})
+            val viewModel: MoviePopularViewModel = hiltViewModel()
+            val uiState = viewModel.uiState
+
+
+            MoviePopularScreen(uiState, navigateToDetailMovie = {})
         }
         composable(BottomNavItem.MovieSearch.route){
 
