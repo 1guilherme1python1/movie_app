@@ -10,10 +10,10 @@ class MovieSearchRemoteDataSourceImpl @Inject constructor (
     private val service: MovieService
 ) : MovieSearchRemoteDataSource {
     override fun getSearchMoviePagingSource(query: String): MovieSearchPagingSource {
-        TODO("Not yet implemented")
+        return MovieSearchPagingSource(query, this)
     }
 
     override suspend fun getSearchMovies(page: Int, query: String): SearchResponse {
-        TODO("Not yet implemented")
+        return service.searchMovie(page, query)
     }
 }
